@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    /* Расстояние между буквами */
+    letter-spacing: 0.03em;
+    /* Высота строки */
+    line-height: 1.55em;
+}
+
+*{
+    /* позволяет не учитывать padding наружу от длины */
+    box-sizing: border-box;
+}
+
+p{
+    /* Расстояние между буквами */
+    letter-spacing: 0.03em;
+    /* Высота строки */
+    line-height: 1.55em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6em;
+}
+
+.container {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 1110px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    padding-top: 72px;
+}
+
+.nav {
+    display: flex;
+    /* Разбросает элементы по разным сторонам, один к другой стороне, один к другой */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 161px;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.text{
+    font-size: 16px;
+    margin-bottom: 60px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.btn{
+    font-size: 16px;
+    color: #fff;
+    background: #34547A;
+    line-height: 1.6em;
+    letter-spacing: 0.1em;
+    padding: 25px 41px;
+    display: block;
+    width: 225px;
+    text-align: center;
+    float: right;
+}
+
+
+.btn:hover{
+    background: #1d3a5e;
+}
+
+.btn:active{
+    background: #19293d;
+}
+
+.offer-title{
+    font-size: 48px;
+    /* text-transform: uppercase; все буквы становятся заглавными*/
+    letter-spacing: 0.07em;
+    margin-bottom: 60px;
+}
+
+.offer{
+    margin-top: 76px;
+}
+
+.netbook{
+   position: absolute;
+   /* right: -100px; */
+    top: 400px;
+}

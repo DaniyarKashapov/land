@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    /* *{
+     padding: 0;
+    margin: 0;
+    }  */
+body{
+    background-color: #f1f1f1;
+    color: #0f141e;
+    font-size: 16px; /*размер шрифта*/
+    font-weight:normal ;/*жирность шрифта*/
+    font-family: 'Roboto', sans-serif; /*стиль шртифта*/
+    /*font: normal 16px 'Roboto', sans-serif ;*/
+}
+a /*все ссылки*/{
+    color:black;
+    text-decoration: none; /*убираем подчеркивания на ссылках */
+}
+
+a:hover /*наведение курсором*/{
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
+} /*если нажать и удерживать*/
+a:visited{
+    color:grey;
+} /*если посетили сайт, то он начнет гореть определённым цветом*/
+.avatar{
+    width: 200px;
+    border-radius: 28px; /*скругление картинки*/
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 25); /*тень*/
+}
+.info-text{
+    margin-left: 45px;
+}
+.info-text{
+    margin-bottom: 10px;
+}
+
+
+
+.info{
+    margin-bottom: 20px;
+    display: flex;
+}
+@media (max-width: 700px) {
+    .info{
+        display:block;/*чтобы текст перемещался вниз при сужении страницы*/
+        text-align: center; /*для телефонов или при уменьшении*/}
+}
+.info p {
+    color: #86898f;
+    margin: 0; /*отступы*/
+    font-style: italic; /*наклон текста*/
+    font-weight: bold;
+    text-decoration: none; /*нижнее подчеркивание текста*/
+    /* text-transform: uppercase; - контроль заглавных букв*/
+    /*letter-spacing: 5px; кол-во пикселей между символами */
+   /* word-spacing: 42px; расстояние между словами */
+}
+
+/* Box Model */
+.container{
+    max-width: 750px; /*ширина текстов */
+    margin:auto;
+    padding-top: 30px;
+}
+
+ /* .social {
+    background: green;
+    padding: 15px;  расстояние между текстом и краем зоны текста, можно контроливать все стороны top,right,bottom,left 
+    border: 5px solid red; границы зоны текста 
+    margin: 5px; расстояние между текстом и краем зоны текста, можно кон0троливать все стороны top,right,bottom,left 
+    /border-bottom-style: dotted ;
+    border-top-width: 15px;
+    border-right-color: blue; */ 
+ 
+
+/* .box-model > div {
+    float: left;
+    background: black;
+    height: 200px;
+    border: 4px solid red;
+    width: 25%;
+    box-sizing: border-box;
+} */
+
+.bg-yellow{
+    background: #eee4b4;
+}
+
+.bg-green{
+    background: #b7eebc;
+}
+
+.bg-red{
+    background: #ffcdcd;
+}
+.card{
+    padding:15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+.list{
+    padding:0 20px; /*отступы*/
+}
+
+.list li{
+    color:#86898f;
+    margin-bottom: 10px;
+    border-bottom: 1px;
+}
+
+.table{
+    width:100%;
+}
+
+.table td{
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3){
+    color:#86898f
+} /*даём цвет по столбикам*/
+
+/* .table tr:nth-child(even){
+    color:red
+} */
+
+.link-list{
+    list-style: none;/*убрать точки  в перечислении */
+    padding:0;
+}
+
+.link-list li{
+    margin-bottom: 10px;
+    padding-bottom:5px;
+    border-bottom:1px solid #ccc ;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+.form-group label{
+    display: block; /*чтобы текст стоял над input */
+    font-size: 14px;
+    color:#c1c8d6
+}
+
+.form-group input, 
+.form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent; /*прозрачность инпута */
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;/*это означает,что он шрифт должен наследоваться*/;
+}
+
+.row{
+    display: flex; /*перевод на одну строчку */
+    margin-bottom: 20px;
+}
+
+.row > .form-group{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child{
+    margin-right: 0;
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    border:none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.textarea{
+    
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent; /*прозрачность инпута */
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;/*это означает,что он шрифт должен наследоваться*/;
+}
+
+.btn:hover{
+    opacity: 0.9; /*при наведении подсвечивается*/
+}
+/* Position */
+/* .position{
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+} 
+.box{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: lightcoral;
+} */
+/* .point {
+    
+} */
+
+
+.bg-pink{
+background: #dbc3d3;
+}
+
+.bg-blue{
+   background-color:#d2c3ec ;
+   
+}
